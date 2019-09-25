@@ -1,0 +1,11 @@
+{{#pagination items=posts as |posts|}}
+		<div class="container mx-auto py-2">
+				<div class="flex flex-wrap">
+						{{#each posts as |post|}}
+								<div class="w-4/5 xl:w-4/5 mx-auto cursor-pointer">
+										<PostList @post={{post}} @users={{users}} />
+								</div>
+						{{/each}}
+				</div>
+		</div>
+{{/pagination}}

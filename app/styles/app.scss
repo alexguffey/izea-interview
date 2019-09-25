@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600&display=swap');
+@import 'tailwind';
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
+
+body {
+  font-family: 'Roboto', sans-serif;
+	line-height: 1.25;
+}
+
+// Helpers
+button:focus {
+  outline:none;
+}
+
+.cap-first-letter:first-letter {
+	text-transform: capitalize;
+}
+
+.horizontal-center {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+// Accommodating for fixed header
+.container {
+	margin-top: 84px;
+}
+
+
+// Pagination
+.previous-button {
+	left: 25px;
+}
+
+.next-button {
+	right: 25px;
+}
+
+
+// Modal styling
+.ember-modal-dialog {
+	border-radius: 0;
+	box-shadow: none;
+}

@@ -1,0 +1,17 @@
+{{yield paginatedItems}}
+
+{{#if showPrevious}}
+		<div class="previous-button text-5xl horizontal-center">
+				<button data-test-previous class="w-6" {{action "goPrevious"}}><img class="w-full" src="/assets/images/left.png" alt="Move Left"></button>
+		</div>
+{{else}}
+		<div class="previous-button text-5xl horizontal-center text-grey-light w-6"><img class="w-full" src="/assets/images/left-g.png" alt="Move Left"></div>
+{{/if}}
+
+{{#if showNext}}
+		<div class="next-button text-5xl horizontal-center">
+				<button data-test-next class="w-6" {{action "goNext"}}><img class="w-full" src="/assets/images/right.png" alt="Move Right"></button>
+		</div>
+{{else}}
+		<div class="next-button text-5xl horizontal-center text-grey-light w-6"><img class="w-full" src="/assets/images/right-g.png" alt="Move Right"></div>
+{{/if}}

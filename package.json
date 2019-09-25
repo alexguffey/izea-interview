@@ -1,11 +1,11 @@
 {
-  "name": "ember-quickstart",
-  "version": "0.0.0",
+  "name": "izea-interview",
+  "version": "0.1.0",
   "private": true,
-  "description": "Small description for ember-quickstart goes here",
+  "description": "Submission for IZEA interview project",
   "repository": "",
   "license": "MIT",
-  "author": "",
+  "author": "Alexandra Guffey",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -44,9 +44,16 @@
     "eslint-plugin-ember": "^6.2.0",
     "eslint-plugin-node": "^9.0.1",
     "loader.js": "^4.7.0",
-    "qunit-dom": "^0.8.4"
+    "qunit-dom": "^0.8.4",
+    "sass": "^1.22.12"
   },
   "engines": {
     "node": "8.* || >= 10.*"
+  },
+  "dependencies": {
+    "ember-cli-sass": "^10.0.1",
+    "ember-cli-tailwind": "^0.7.0",
+    "ember-modal-dialog": "^3.0.0-beta.4",
+    "ember-test-selectors": "^2.1.0"
   }
 }

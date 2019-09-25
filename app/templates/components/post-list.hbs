@@ -1,0 +1,27 @@
+{{yield}}
+
+<button {{action (action "toggleModal" post.title)}} class="w-full text-left">
+		<div class="border-b border-black overflow-hidden">
+				<div class="text-black font-medium cap-first-letter text-2xl lg:text-3xl py-3">
+						{{post.title}}
+				</div>
+		</div>
+</button>
+
+
+{{#if isShowingModal}}
+		{{#modal-dialog onClose=(action "toggleModal") targetAttachment="center" translucentOverlay=true}}
+				<div class="p-4">
+						<div class="cap-first-letter text-black font-medium text-3xl lg:text-4xl mb-2">
+								{{post.title}}
+						</div>
+						<div class="cap-first-letter font-light text-grey-darker text-xl lg:text-2xl text-sm mb-8">
+								{{post.body}}
+						</div>
+						<div class="post-author">
+								<p class="font-semibold text-md">{{post.user.name}}</p>
+								<p class="font-light text-grey-darker text-md">@{{post.user.username}}</p>
+						</div>
+				</div>
+		{{/modal-dialog}}
+{{/if}}
